@@ -101,7 +101,7 @@ body {
         }
         .main-ton_btn{
             display: grid;
-            grid-template-columns: 50% 10%;
+            grid-template-columns: 80% 10%;
             background-color: #0DA2C6;
             gap: 1em;
             border: 0px;
