@@ -86,6 +86,10 @@ body {
             padding: 5px;
             border-radius: 12px;
         }
+        .disable-btn{
+            padding: 5px;
+            border-radius: 12px;
+        }
         .div7 video{
             border: 1px solid #999;
             width: 100%;
