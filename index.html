@@ -9,7 +9,6 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 20px;
-            min-height: 750px;
             background-color: white;
         }
         h1 {
@@ -27,7 +26,6 @@
             display: grid;
             padding: 10px;
             color: darkslategray;
-            padding-bottom: 80px;
         }
         .main-btns-div{
             border: 1px solid #ABBDC7;
@@ -59,7 +57,7 @@
             position: fixed;
             width: 100%;
             left: 0px;
-            bottom: 45px;
+            bottom: 20px;
             grid-template-columns: 1fr 1fr 1fr;
             background-color: white;
             border-radius: 10px;
@@ -73,10 +71,16 @@
             width: 40px;
         }
         .mb-img{
-            position: absolute;
-            margin-top: -11px;
             right: 40px;
+            position: absolute;
             width: 300px;
+            margin-top: -77px;
+        }
+        .go-top-tikers{
+            width: 40px;
+            position: absolute;
+            margin-top: -120px;
+            left: 92%;
         }
     </style>
 </head>
@@ -84,14 +88,17 @@
     <img class="bot-logo" src="https://i.postimg.cc/xCXXtHkN/2024-06-17-131713.png" alt="Лого бота">
     
     <div class="main-btns">
-        <div class="main-btns-div" style="min-height:100px;">
+        <div class="main-btns-div" >
             <button onclick="show7()">Топ Тикеры</button>
-            <img class="mb-img" src="https://i.postimg.cc/kGkKxsf5/Group-33532.png">
             <div id="div7" style="margin-top: 100px;">
+                <a href="#">
+                    <img class="go-top-tikers" src="https://i.postimg.cc/C1sTWMRC/2024-06-17-142350.png">
+                </a>
+                <img class="mb-img" src="https://i.postimg.cc/kGkKxsf5/Group-33532.png">
                 <p>Топ Тикеры</p>
             </div>
         </div>
-        <div class="main-btns-div">
+        <div class="main-btns-div"> 
             <button onclick="show1()">Суточные объемы тикера</button>
             <div id="div1">
                 <p>Суточные объемы тикера</p>
@@ -112,7 +119,7 @@
         <div class="main-btns-div">
             <button onclick="show4()">Корреляция двух активов</button>
             <div id="div4">
-                <p>Корреляция двух активов</p>
+                <h3>Корреляция двух активов</p>
             </div>
         </div>
         <div class="main-btns-div">
@@ -154,73 +161,121 @@
             var div = document.getElementById('div1');
             if (div.style.display === "none" || div.style.display === "") {
                 div.style.display = "block";
+                document.getElementById('div2').style.display="none";
+                document.getElementById('div3').style.display="none";
+                document.getElementById('div4').style.display="none";
+                document.getElementById('div5').style.display="none";
+                document.getElementById('div6').style.display="none";
+                document.getElementById('div7').style.display="none";
+        
             } else {
                 div.style.display = "none";
             }
+            
+            
         }
         
         function show2() {
             var div = document.getElementById('div2');
             if (div.style.display === "none" || div.style.display === "") {
                 div.style.display = "block";
+                document.getElementById('div1').style.display="none";
+                document.getElementById('div3').style.display="none";
+                document.getElementById('div4').style.display="none";
+                document.getElementById('div5').style.display="none";
+                document.getElementById('div6').style.display="none";
+                document.getElementById('div7').style.display="none";
+            
             } else {
                 div.style.display = "none";
             }
+            
         }
         
         function show3() {
             var div = document.getElementById('div3');
             if (div.style.display === "none" || div.style.display === "") {
                 div.style.display = "block";
+                document.getElementById('div2').style.display="none";
+                document.getElementById('div1').style.display="none";
+                document.getElementById('div4').style.display="none";
+                document.getElementById('div5').style.display="none";
+                document.getElementById('div6').style.display="none";
+                document.getElementById('div7').style.display="none";
+            
             } else {
                 div.style.display = "none";
             }
+            
         }
         
         function show4() {
             var div = document.getElementById('div4');
             if (div.style.display === "none" || div.style.display === "") {
                 div.style.display = "block";
+                document.getElementById('div2').style.display="none";
+                document.getElementById('div3').style.display="none";
+                document.getElementById('div1').style.display="none";
+                document.getElementById('div5').style.display="none";
+                document.getElementById('div6').style.display="none";
+                document.getElementById('div7').style.display="none";
+            
             } else {
                 div.style.display = "none";
             }
+            
         }
         
         function show5() {
             var div = document.getElementById('div5');
             if (div.style.display === "none" || div.style.display === "") {
                 div.style.display = "block";
+                document.getElementById('div2').style.display="none";
+                document.getElementById('div3').style.display="none";
+                document.getElementById('div4').style.display="none";
+                document.getElementById('div1').style.display="none";
+                document.getElementById('div6').style.display="none";
+                document.getElementById('div7').style.display="none";
+            
             } else {
                 div.style.display = "none";
             }
+            
         }
         
         function show6() {
             var div = document.getElementById('div6');
             if (div.style.display === "none" || div.style.display === "") {
                 div.style.display = "block";
+                document.getElementById('div2').style.display="none";
+                document.getElementById('div3').style.display="none";
+                document.getElementById('div4').style.display="none";
+                document.getElementById('div5').style.display="none";
+                document.getElementById('div1').style.display="none";
+                document.getElementById('div7').style.display="none";
+            
             } else {
                 div.style.display = "none";
             }
+            
         }
         
         function show7() {
             var div = document.getElementById('div7');
             if (div.style.display === "none" || div.style.display === "") {
                 div.style.display = "block";
+                document.getElementById('div2').style.display="none";
+                document.getElementById('div3').style.display="none";
+                document.getElementById('div4').style.display="none";
+                document.getElementById('div5').style.display="none";
+                document.getElementById('div6').style.display="none";
+                document.getElementById('div1').style.display="none";
             } else {
                 div.style.display = "none";
             }
         }
         
-        function show8() {
-            var div = document.getElementById('div8');
-            if (div.style.display === "none" || div.style.display === "") {
-                div.style.display = "block";
-            } else {
-                div.style.display = "none";
-            }
-        }
+       
     </script>
 </body>
 </html>
