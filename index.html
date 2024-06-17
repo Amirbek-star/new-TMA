@@ -1,102 +1,34 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram Bot Web App</title>
+    <title>Добро пожаловать!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background-color: #f0f0f0;
-            margin: 0;
-        }
-
-        .container {
             text-align: center;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 50px;
         }
-
-        input {
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            width: calc(100% - 22px); /* Учитывая padding и border */
+        h1 {
+            color: #333;
         }
-
-        button {
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        #response {
+        p {
+            color: #666;
+            font-size: 18px;
             margin-top: 20px;
-            font-weight: bold;
-            color: green;
+        }
+        .bot-logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Telegram Bot Web App</h1>
-        <form id="message-form">
-            <input type="text" id="message-input" placeholder="Введите сообщение" required>
-            <button type="submit">Отправить</button>
-        </form>
-        <p id="response"></p>
-    </div>
-    <script>
-        document.getElementById('message-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const messageInput = document.getElementById('message-input').value;
-
-            const BOT_TOKEN = '7246553077:AAEmZirfHhtvxJFgtncmyj0onSPLBgibelw';
-            const CHAT_ID = 'YOUR_CHAT_ID'; // Ваш ID чата
-            const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
-
-            fetch(TELEGRAM_API_URL, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    chat_id: CHAT_ID,
-                    text: messageInput,
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: 'Открыть приложение',
-                                    url: 'https://amirbek-star.github.io/new-TMA/'
-                                }
-                            ]
-                        ]
-                    }
-                }),
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.ok) {
-                    document.getElementById('response').textContent = 'Сообщение отправлено!';
-                } else {
-                    document.getElementById('response').textContent = 'Ошибка отправки сообщения.';
-                }
-            })
-            .catch(error => {
-                document.getElementById('response').textContent = 'Ошибка отправки сообщения.';
-            });
-        });
-    </script>
+    <img class="bot-logo" src="https://yt3.googleusercontent.com/ytc/AOPolaR5iDrxryU5-1CUW0hP13UkctCeCrz2iNk-TcwgBA=s900-c-k-c0x00ffffff-no-rj" alt="Лого бота">
+    <h1>Добро пожаловать в нашего телеграм-бота!</h1>
+    <p>Здесь вы найдете всю необходимую информацию и функционал. Приятного общения!</p>
 </body>
 </html>
