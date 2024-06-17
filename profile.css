@@ -81,13 +81,12 @@ body {
         }
         .active-btn{
             background-color: #0da2c6;
-            padding-right: 50px;
-            padding-left: 10px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            position: absolute;
-            margin-top: -5px;
-            border-radius: 10px 0px 0px 10px;
+            padding: 5px;
+            border-radius: 12px;
+        }
+        .disable-btn{
+            padding: 5px;
+            border-radius: 12px;
         }
         .main-top_right p{
             color: #999;
