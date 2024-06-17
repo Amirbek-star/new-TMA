@@ -24,11 +24,169 @@
             height: auto;
             margin-bottom: 20px;
         }
+        .main-btns{
+            display: grid;
+            padding: 10px;
+            color: darkslategray;
+        }
+        .main-btns button{
+            background-color: white;
+            border: 0px;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 18px;
+            color: darkslategray;
+        }
+        #div1,
+        #div2,
+        #div3,
+        #div4,
+        #div5,
+        #div6,
+        #div7,
+        #div8{
+            display: none;
+        }
+        .navbar-bottom{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px #999;
+        }
+        .navbar-bottom button{
+            background-color: rgb(0,0,0,0);
+            border: 0px;
+            cursor: pointer;
+        }
+        .navbar-bottom img{
+            width: 40px;
+        }
     </style>
 </head>
 <body>
     <img class="bot-logo" src="https://yt3.googleusercontent.com/ytc/AOPolaR5iDrxryU5-1CUW0hP13UkctCeCrz2iNk-TcwgBA=s900-c-k-c0x00ffffff-no-rj" alt="Лого бота">
     <h1>Добро пожаловать в нашего телеграм-бота!</h1>
     <p>Здесь вы найдете всю необходимую информацию и функционал. Приятного общения!</p>
+    <div class="main-btns">
+        <button onclick="show1()">Текущие ТОП тикеры</button>
+        <div id="div1">
+            <h1>Текущие ТОП тикеры</h1>
+        </div>
+        <button onclick="show2()">Детфльная информация обьемов</button>
+        <div id="div2">
+            <h1>Детфльная информация обьемов</h1>
+        </div>
+        <button onclick="show3()">Информация о ставках ФРС</button>
+        <div id="div3">
+            <h1>Информация о ставках ФРС</h1>
+        </div>
+        <button onclick="show4()">Инофрмация о тикере</button>
+        <div id="div4">
+            <h1>Инофрмация о тикере</h1>
+        </div>
+        <button onclick="show5()">Корреляция двух активов</button>
+        <div id="div5">
+            <h1>Корреляция двух активов</h1>
+        </div>
+        <button onclick="show6()">Градация роста активов за последний месяц</button>
+        <div id="div6">
+            <h1>Градация роста активов за последний месяц</h1>
+        </div>
+        <button onclick="show7()">Градация роста обьемов</button>
+        <div id="div7">
+            <h1>Градация роста обьемов</h1>
+        </div>
+        <button onclick="show8()">Поменять язык</button>
+        <div id="div8">
+            <h1>Поменять язык</h1>
+        </div>
+    </div>
+    <div class="navbar-bottom">
+       <div class="navbar-div">
+           <button onclick="showProfile()">
+               <img src="https://grizly.club/uploads/posts/2022-12/1670955047_grizly-club-p-chelovek-ikonka-png-1.png">
+           </button>
+       </div>
+       <div class="navbar-div">
+           <button onclick="showSettings()">
+               <img src="https://cdn1.iconfinder.com/data/icons/complete-common-version-6-2/1024/settings-1024.png">
+           </button>
+       </div> 
+    </div>
+    <script>
+        function show1() {
+            var div = document.getElementById('div1');
+            if (div.style.display === "none" || div.style.display === "") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        }
+        
+        function show2() {
+            var div = document.getElementById('div2');
+            if (div.style.display === "none" || div.style.display === "") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        }
+        
+        function show3() {
+            var div = document.getElementById('div3');
+            if (div.style.display === "none" || div.style.display === "") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        }
+        
+        function show4() {
+            var div = document.getElementById('div4');
+            if (div.style.display === "none" || div.style.display === "") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        }
+        
+        function show5() {
+            var div = document.getElementById('div5');
+            if (div.style.display === "none" || div.style.display === "") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        }
+        
+        function show6() {
+            var div = document.getElementById('div6');
+            if (div.style.display === "none" || div.style.display === "") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        }
+        
+        function show7() {
+            var div = document.getElementById('div7');
+            if (div.style.display === "none" || div.style.display === "") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        }
+        
+        function show8() {
+            var div = document.getElementById('div8');
+            if (div.style.display === "none" || div.style.display === "") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
