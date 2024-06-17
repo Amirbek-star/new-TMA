@@ -9,13 +9,14 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 0px 16px;
-            background-color: white;
+            background: linear-gradient(to bottom, #0D1F2D, #0F3D56); /* Цвета градиента */
         }
         h1 {
             color: #333;
         }
         p{
             margin-left: 6px;
+            color: #999;
         }
         .bot-logo {
             width: 160px;
@@ -26,24 +27,23 @@
             display: grid;
             padding: 10px;
             color: darkslategray;
-
             padding-bottom: 50px;
         }
         .main-btns-div{
-            border: 1px solid #D2BAAC;
+            border: 1px solid #95A0A5;
             margin-bottom: 10px;
             text-align: left;
             padding: 12px 16px; 
             border-radius: 12px;
         }
         .main-btns button{
-            background-color: white;
+            background-color: rgb(0,0,0,0);
             border: 0px;
             width: 100%;
             font-size: 18px;
             border-radius: 12px;
             text-align: left;
-            color: darkslategray;
+            color: 95A0A5;
         }
         #div1,
         #div2,
@@ -61,9 +61,9 @@
             width: 100%;
             left: 0px;
             bottom: 13px;
-            background-color: rgb(0,0,0,0);
+
             grid-template-columns: 1fr 1fr 1fr;
-            background-color: white;
+            background-color: rgb(0,0,0,0);
             border-radius: 10px;
         }
         .navbar-bottom button{
@@ -80,26 +80,27 @@
             width: 200px;
             margin-top: -40px;
         }
-        .go-top-tikers{
-            width: 40px;
-            position: absolute;
-            margin-top: -120px;
-            left: 77%;
+        
+        .div7 video{
+            border: 1px solid #999;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <img class="bot-logo" src="https://i.postimg.cc/xCXXtHkN/2024-06-17-131713.png" alt="Лого бота">
-    
+
     <div class="main-btns">
         <div class="main-btns-div" >
             <button onclick="show7()">Топ Тикеры</button>
             <div id="div7" style="margin-top: 100px;">
-                <a href="#">
-                    <img class="go-top-tikers" src="https://i.postimg.cc/C1sTWMRC/2024-06-17-142350.png">
-                </a>
-                <video src="coin.mp4" autoplay loop muted></video>
-                <video src="coin.mp4" autoplay loop muted></video>
+                <div style="display: grid; grid-template-columns: repeat(6,1fr);">
+                    <video src="coin.mp4" autoplay loop muted></video>
+                    <video src="ton coin.mp4" autoplay loop muted></video>
+                    <video src="coin.mp4" autoplay loop muted></video>
+                    <video src="ton coin.mp4" autoplay loop muted></video>
+                    <video src="coin.mp4" autoplay loop muted></video>
+                    <video src="ton coin.mp4" autoplay loop muted></video>
+                </div>
                 <p>Топ Тикеры</p>
             </div>
         </div>
@@ -147,17 +148,17 @@
        
        <div class="navbar-div">
            <a href="setting.html">
-               <img src="https://i.postimg.cc/WbCXn6hg/2024-06-17-132901.png">
+               <img src="https://i.postimg.cc/Px14rPHc/Setting.png">
            </a>
        </div>
        <div class="navbar-div">
            <a href="index.html">
-               <img src="https://i.postimg.cc/mZKN03Gw/2024-06-17-141031.png">
+               <img style="border-radius: 12px; width: 88px; height: 60px;" src="https://i.postimg.cc/020B0XL3/2024-06-17-161752.png">
            </a>
        </div> 
        <div class="navbar-div">
            <a href="profile.html">
-               <img src="https://i.postimg.cc/xdSgrfGd/2024-06-17-132913.png">
+               <img src="https://i.postimg.cc/J0q5ZvG5/user-circle-1.png">
            </a>
        </div>
     </div>
