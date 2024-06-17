@@ -14,14 +14,13 @@
         h1 {
             color: #333;
         }
-        p {
-            color: #666;
-            font-size: 18px;
-            margin-top: 20px;
+        p{
+            margin-left: 6px;
         }
         .bot-logo {
             width: 250px;
             height: auto;
+            margin-top: 30px;
             margin-bottom: 20px;
         }
         .main-btns{
@@ -29,11 +28,16 @@
             padding: 10px;
             color: darkslategray;
         }
+        .main-btns-div{
+            border: 1px solid #ABBDC7;
+            margin-bottom: 10px;
+            text-align: left;
+            padding: 12px 16px; 
+            border-radius: 12px;
+        }
         .main-btns button{
             background-color: white;
-            border: 1px solid #ABBDC7; 
-            margin-bottom: 10px;
-            padding: 12px 16px;
+            border: 0px;
             font-size: 18px;
             border-radius: 12px;
             text-align: left;
@@ -67,37 +71,63 @@
         .navbar-bottom img{
             width: 40px;
         }
+        .mb-img{
+            position: absolute;
+            margin-top: -11px;
+            right: 40px;
+            width: 300px;
+        }
     </style>
 </head>
 <body>
     <img class="bot-logo" src="https://i.postimg.cc/xCXXtHkN/2024-06-17-131713.png" alt="Лого бота">
     
     <div class="main-btns">
-        <button onclick="show1()">Суточные объемы тикера</button>
-        <div id="div1">
-            <h3>Суточные объемы тикера</h3>
+        <div class="main-btns-div" style="min-height:100px;">
+            <button onclick="show7()">Топ Тикеры</button>
+            <img class="mb-img" src="https://i.postimg.cc/kGkKxsf5/Group-33532.png">
+            <div id="div7" style="margin-top: 100px;">
+                <p>Топ Тикеры</p>
+            </div>
         </div>
-        <button onclick="show2()">Информация о тикере</button>
-        <div id="div2">
-            <h3>Информация о тикере</h3>
+        <div class="main-btns-div">
+            <button onclick="show1()">Суточные объемы тикера</button>
+            <div id="div1">
+                <p>Суточные объемы тикера</p>
+            </div>
         </div>
-        <button onclick="show3()">Информация о ставках финансирования</button>
-        <div id="div3">
-            <h3>Информация о ставках ФРС</h3>
+        <div class="main-btns-div">
+            <button onclick="show2()">Информация о тикере</button>
+            <div id="div2">
+                <p>Информация о тикере</p>
+            </div>
         </div>
-        <button onclick="show4()">Корреляция двух активов</button>
-        <div id="div4">
-            <h3>Корреляция двух активов</h3>
+        <div class="main-btns-div">
+            <button onclick="show3()">Информация о ставках финансирования</button>
+            <div id="div3">
+                <p>Информация о ставках ФРС</p>
+            </div>
         </div>
-       
-        <button onclick="show5()">Градация роста объемов</button>
-        <div id="div5">
-            <h3>Градация роста объемов</h3>
+        <div class="main-btns-div">
+            <button onclick="show4()">Корреляция двух активов</button>
+            <div id="div4">
+                <h3>Корреляция двух активов</p>
+            </div>
         </div>
-        <button onclick="show6()">Отслеживание импульсов</button>
-        <div id="div6">
-            <h3>Отслеживание импульсов</h3>
+        <div class="main-btns-div">
+            <button onclick="show5()">Градация роста объемов</button>
+            <div id="div5">
+                <p>Градация роста объемов</p>
+            </div>
         </div>
+       <div class="main-btns-div">
+           <button onclick="show6()">Отслеживание импульсов</button>
+            <div id="div6">
+                <p>Отслеживание импульсов</p>
+            </div>
+       </div>
+        
+        
         
     </div>
     <div class="navbar-bottom">
