@@ -10,8 +10,8 @@
             text-align: center;
             padding: 0px 16px;
             background-size: cover;
-            background: linear-gradient(to bottom, #0D1F2D, #0F3D56); /* Цвета градиента */
-            
+            height: 100vh;
+            background: linear-gradient(to bottom, #0D1F2D, #0F3D56); /* Цвета градиента */            
         }
         h1 {
             color: #333;
@@ -47,6 +47,8 @@
             border-radius: 12px;
             text-align: left;
             color: #95A0A5;
+            display: grid;
+            grid-template-columns: 4% 70%;
         }
         #div1,
         #div2,
@@ -73,6 +75,8 @@
             background-color: rgb(0,0,0,0);
             border: 0px;
             cursor: pointer;
+            
+            
         }
         .navbar-bottom img{
             width: 40px;
@@ -94,7 +98,7 @@
 
     <div class="main-btns">
         <div class="main-btns-div" >
-            <button onclick="show7()">Топ Тикеры</button>
+            <button onclick="show7()" style="color:white;"><div></div>Топ Тикеры</button>
             <div id="div7" style="margin-top: 100px;">
                 <div style="display: grid; grid-template-columns: repeat(6,1fr);">
                     <video src="coin.mp4" autoplay loop muted></video>
@@ -108,37 +112,37 @@
             </div>
         </div>
         <div class="main-btns-div"> 
-            <button onclick="show1()">Суточные объемы тикера</button>
+            <button style="color:white;" onclick="show1()"><img src="https://i.postimg.cc/BbT4gc0g/Icon.png">Суточные объемы тикера</button>
             <div id="div1">
                 <p>Суточные объемы тикера</p>
             </div>
         </div>
         <div class="main-btns-div">
-            <button onclick="show2()">Информация о тикере</button>
+            <button onclick="show2()"><img src="https://i.postimg.cc/BbT4gc0g/Icon.png">Информация о тикере</button>
             <div id="div2">
                 <p>Информация о тикере</p>
             </div>
         </div>
         <div class="main-btns-div">
-            <button onclick="show3()">Информация о ставках финансирования</button>
+            <button onclick="show3()"><img src="https://i.postimg.cc/BbT4gc0g/Icon.png">Информация о ставках финансирования</button>
             <div id="div3">
-                <p>Информация о ставках ФРС</p>
+                <p>Информация о ставках финансирования</p>
             </div>
         </div>
         <div class="main-btns-div">
-            <button onclick="show4()">Корреляция двух активов</button>
+            <button onclick="show4()"><img src="https://i.postimg.cc/BbT4gc0g/Icon.png">Корреляция двух активов</button>
             <div id="div4">
                 <p>Корреляция двух активов</p>
             </div>
         </div>
         <div class="main-btns-div">
-            <button onclick="show5()">Градация роста объемов</button>
+            <button onclick="show5()"><img src="https://i.postimg.cc/BbT4gc0g/Icon.png">Градация роста объемов</button>
             <div id="div5">
                 <p>Градация роста объемов</p>
             </div>
         </div>
        <div class="main-btns-div">
-           <button onclick="show6()">Отслеживание импульсов</button>
+           <button onclick="show6()"><img src="https://i.postimg.cc/BbT4gc0g/Icon.png">Отслеживание импульсов</button>
             <div id="div6">
                 <p>Отслеживание импульсов</p>
             </div>
@@ -150,7 +154,7 @@
     <div class="navbar-bottom">
        
        <div class="navbar-div">
-           <a href="setting.html" style="margin-bottom: 30px;">
+           <a href="setting.html" style="margin-bottom: 25px;">
                <img src="https://i.postimg.cc/Px14rPHc/Setting.png">
            </a>
        </div>
@@ -160,7 +164,7 @@
            </a>
        </div> 
        <div class="navbar-div">
-           <a href="profile.html" style="margin-bottom: 30px;">
+           <a href="profile.html" style="margin-bottom: 25px;">
                <img src="https://i.postimg.cc/J0q5ZvG5/user-circle-1.png">
            </a>
        </div>
@@ -287,6 +291,12 @@
        
     </script>
 </body>
+</html>
+
+    </script>
+</body>
+</html>
+
 </html>
 
     </script>
