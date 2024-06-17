@@ -104,6 +104,66 @@
     color: #999;
 }
 
+.if-disable{
+    background-color: #95A0A5;
+    
+}
+.main{
+    padding: 0px 16px;
+    margin-top: 20px;
+}
+.main-ton_btn{
+    display: grid;
+    grid-template-columns: 50% 10%;
+    background-color: #0DA2C6;
+    gap: 1em;
+    border: 0px;
+    border-radius: 12px;
+    width: 100%;
+    text-align: right;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+.main-ton_btn img{
+    padding: 12px;
+}
+.main-info{
+    padding: 0px 16px;
+    margin-top: 20px;
+    
+}
+.transactions-info{
+    background-color: #1B4F66;
+    border-radius: 12px;
+}
+.transactions-info_header{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    text-align: left;
+}
+.transactions-info_header img{
+    padding: 12px;
+}
+.transactions-info p{
+    color: white;
+    
+}
+.transactions-info_main{
+    margin: 0px;
+    padding-bottom: 12px;
+}
+
+.transactions-info_main p{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
 
         
         
@@ -123,12 +183,29 @@
                     <p>на 1 месяц</p>
                 </div>
                 <div>
-                    <button class="offer-btn">Оформить подписку</button>
+                    <button class="offer-btn if-disable">Оформить подписку</button>
                 </div>
             </div>
             <div class="main-top_right">
                 <img src="https://i.postimg.cc/bvNSWrV8/image-21.png">
                 <p>Не привязан</p>
+            </div>
+        </div>
+        <div class="main">
+            <button class="main-ton_btn"><p>Привязать TON Кошелек</p> <img src="https://i.postimg.cc/8CcXDhZz/Icon-2.png"></button>
+        </div>
+        <div class="main-info">
+            <div class="transactions-info">
+                <div class="transactions-info_header">
+                    <img src="https://i.postimg.cc/N0yhbqqD/Icon-3.png">
+                    <p>История транзакций</p>
+                </div>
+                <div class="transactions-info_main">
+                    <p><span>16.05.2024</span><span>12:03</span><span>39 TON</span></p>
+                    <p><span>16.05.2024</span><span>12:03</span><span>39 TON</span></p>
+                    <p><span>16.05.2024</span><span>12:03</span><span>39 TON</span></p>
+                    <p><span>16.05.2024</span><span>12:03</span><span>39 TON</span></p>
+                </div>
             </div>
         </div>
     </main>
