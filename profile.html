@@ -17,7 +17,8 @@
                 try {
                     const connectedWallet = await tonConnectUI.connectWallet();
                     console.log('Connected Wallet:', connectedWallet);
-                    // Выполните необходимые действия после подключения кошелька
+                    alert('Wallet connected!');
+                    // Add any additional actions you want to perform after connecting the wallet
                 } catch (error) {
                     console.error('Error connecting to wallet:', error);
                 }
