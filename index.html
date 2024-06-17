@@ -7,7 +7,6 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
             text-align: center;
             padding: 50px;
         }
@@ -20,7 +19,7 @@
             margin-top: 20px;
         }
         .bot-logo {
-            width: 100px;
+            width: 250px;
             height: auto;
             margin-bottom: 20px;
         }
@@ -31,10 +30,12 @@
         }
         .main-btns button{
             background-color: white;
-            border: 0px;
+            border: 1px solid #ABBDC7; 
             margin-bottom: 10px;
-            padding: 10px;
+            padding: 12px 16px;
             font-size: 18px;
+            border-radius: 12px;
+            text-align: left;
             color: darkslategray;
         }
         #div1,
@@ -49,11 +50,12 @@
         }
         .navbar-bottom{
             display: grid;
+            position: fixed;
+            width: 100%;
+            top: 20px;
             grid-template-columns: 1fr 1fr;
             background-color: white;
-            padding: 10px;
             border-radius: 10px;
-            box-shadow: 0px 2px 5px #999;
         }
         .navbar-bottom button{
             background-color: rgb(0,0,0,0);
@@ -66,54 +68,48 @@
     </style>
 </head>
 <body>
-    <img class="bot-logo" src="https://yt3.googleusercontent.com/ytc/AOPolaR5iDrxryU5-1CUW0hP13UkctCeCrz2iNk-TcwgBA=s900-c-k-c0x00ffffff-no-rj" alt="Лого бота">
-    <h1>Добро пожаловать в нашего телеграм-бота!</h1>
-    <p>Здесь вы найдете всю необходимую информацию и функционал. Приятного общения!</p>
+    <img class="bot-logo" src="https://i.postimg.cc/xCXXtHkN/2024-06-17-131713.png" alt="Лого бота">
+    
     <div class="main-btns">
-        <button onclick="show1()">Текущие ТОП тикеры</button>
+        <button onclick="show1()">Суточные объемы тикера</button>
         <div id="div1">
-            <h1>Текущие ТОП тикеры</h1>
+            <h3>Суточные объемы тикера</h3>
         </div>
-        <button onclick="show2()">Детфльная информация обьемов</button>
+        <button onclick="show2()">Информация о тикере</button>
         <div id="div2">
-            <h1>Детфльная информация обьемов</h1>
+            <h3>Информация о тикере</h3>
         </div>
-        <button onclick="show3()">Информация о ставках ФРС</button>
+        <button onclick="show3()">Информация о ставках финансирования</button>
         <div id="div3">
-            <h1>Информация о ставках ФРС</h1>
+            <h3>Информация о ставках ФРС</h3>
         </div>
-        <button onclick="show4()">Инофрмация о тикере</button>
+        <button onclick="show4()">Корреляция двух активов</button>
         <div id="div4">
-            <h1>Инофрмация о тикере</h1>
+            <h3>Корреляция двух активов</h3>
         </div>
-        <button onclick="show5()">Корреляция двух активов</button>
+       
+        <button onclick="show5()">Градация роста объемов</button>
         <div id="div5">
-            <h1>Корреляция двух активов</h1>
+            <h3>Градация роста объемов</h3>
         </div>
-        <button onclick="show6()">Градация роста активов за последний месяц</button>
+        <button onclick="show6()">Отслеживание импульсов</button>
         <div id="div6">
-            <h1>Градация роста активов за последний месяц</h1>
+            <h3>Отслеживание импульсов</h3>
         </div>
-        <button onclick="show7()">Градация роста обьемов</button>
-        <div id="div7">
-            <h1>Градация роста обьемов</h1>
-        </div>
-        <button onclick="show8()">Поменять язык</button>
-        <div id="div8">
-            <h1>Поменять язык</h1>
-        </div>
+        
     </div>
     <div class="navbar-bottom">
-       <div class="navbar-div">
-           <button onclick="showProfile()">
-               <img src="https://grizly.club/uploads/posts/2022-12/1670955047_grizly-club-p-chelovek-ikonka-png-1.png">
-           </button>
-       </div>
+       
        <div class="navbar-div">
            <button onclick="showSettings()">
-               <img src="https://cdn1.iconfinder.com/data/icons/complete-common-version-6-2/1024/settings-1024.png">
+               <img src="https://i.postimg.cc/WbCXn6hg/2024-06-17-132901.png">
            </button>
        </div> 
+       <div class="navbar-div">
+           <button onclick="showProfile()">
+               <img src="https://i.postimg.cc/xdSgrfGd/2024-06-17-132913.png">
+           </button>
+       </div>
     </div>
     <script>
         function show1() {
