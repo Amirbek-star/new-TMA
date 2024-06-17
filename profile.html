@@ -150,10 +150,24 @@
             grid-template-columns: 1fr 1fr 1fr;
         }
     </style>
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
     <script>
-        function openTonWallet() {
-            window.location.href = "https://ton.org/"; // Замените URL на нужный для создания ключа в TON кошельке
-        }
+        document.addEventListener("DOMContentLoaded", () => {
+            const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+                manifestUrl: 'https://<YOUR_APP_URL>/tonconnect-manifest.json',
+                buttonRootId: 'ton-connect'
+            });
+
+            document.getElementById('ton-connect-btn').addEventListener('click', async () => {
+                try {
+                    const connectedWallet = await tonConnectUI.connectWallet();
+                    console.log('Connected Wallet:', connectedWallet);
+                    // Выполните необходимые действия после подключения кошелька
+                } catch (error) {
+                    console.error('Error connecting to wallet:', error);
+                }
+            });
+        });
     </script>
 </head>
 <body>
@@ -177,7 +191,9 @@
             </div>
         </div>
         <div class="main">
-            <button class="main-ton_btn" onclick="openTonWallet()"><p>Привязать TON Кошелек</p> <img src="https://i.postimg.cc/8CcXDhZz/Icon-2.png"></button>
+            <div id="ton-connect">
+                <button class="main-ton_btn" id="ton-connect-btn"><p>Привязать TON Кошелек</p> <img src="https://i.postimg.cc/8CcXDhZz/Icon-2.png"></button>
+            </div>
         </div>
         <div class="main-info">
             <div class="transactions-info">
