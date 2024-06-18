@@ -5,6 +5,7 @@ body {
             background-size: cover;
             margin: 0px;
             height: 100vh;
+            background-repeat: no-repeat; /* Отключить повторение фона */
             background: linear-gradient(to bottom, #0D1F2D, #0F3D56); /* Цвета градиента */            
         }
         .navbar-bottom{
@@ -123,6 +124,7 @@ body {
         .main-info{
             padding: 0px 16px;
             margin-top: 20px;
+            padding-bottom: 50px;
         }
         .transactions-info{
             background-color: #1B4F66;
