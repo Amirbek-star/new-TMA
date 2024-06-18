@@ -2,9 +2,11 @@
 body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-size: cover;
+            
             margin: 0px;
             height: 100vh;
+            
+            background-size: 100% 100%;
             background-repeat: no-repeat; /* Отключить повторение фона */
             background-image: url('https://i.postimg.cc/yxjXQCxx/Splash-screen.png');
         }
