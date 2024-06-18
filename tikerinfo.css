@@ -1,4 +1,4 @@
-body {
+        body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0px;
@@ -67,6 +67,7 @@ body {
             border: 1px solid #5A8A9F;
             padding: 12px 20px;
             border-radius: 12px;
+            width: 100%;
             color: #95A0A5;
         }
         .main-input.error {
@@ -87,6 +88,7 @@ body {
             position: fixed;
             bottom: 70px;
             left: 0%;
+            width: 100%;
             background-color: #1c5169;
             border-top: 1px solid #5A8A9F;
             padding-top: 15px;
