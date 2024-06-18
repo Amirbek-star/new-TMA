@@ -9,7 +9,6 @@ body {
         .navbar-bottom {
             display: grid;
             position: fixed;
-            width: 100%;
             left: 0px;
             bottom: 0px;
             padding-bottom: 10px;
@@ -63,7 +62,6 @@ body {
         .main-input {
             background-color: rgb(0,0,0,0);
             border: 1px solid #5A8A9F;
-            width: 100%;
             padding: 12px 20px;
             border-radius: 12px;
             color: #95A0A5;
@@ -73,7 +71,6 @@ body {
         }
         .main-btn {
             background-color: #0DA2C6;
-            width: 98%;
             padding: 10px;
             color: white;
             font-size: 17px;
@@ -87,7 +84,6 @@ body {
             position: fixed;
             bottom: 70px;
             left: 0%;
-            width: 100%;
             background-color: #1c5169;
             border-top: 1px solid #5A8A9F;
             padding-top: 15px;
@@ -99,7 +95,6 @@ body {
             display: none;
         }
         #tickerInfo p{
-            width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr;
             color: white;
