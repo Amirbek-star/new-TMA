@@ -142,12 +142,12 @@ body {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
         }
-        #ton-connect{
+        #ton-connect-btn{
             width: 100%;
             border-radius: 20px;
             padding: 0px;
         }
-        #ton-connect button{
+        #ton-connect-btn button{
             width: 100%;
             border-radius: 20px;
             text-align: center;
