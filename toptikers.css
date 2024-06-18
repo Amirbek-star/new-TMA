@@ -127,6 +127,7 @@ body {
         .transactions-info{
             background-color: #1B4F66;
             border-radius: 12px;
+            margin-bottom: 20px;
         }
         .transactions-info_header{
             margin: 0px;
