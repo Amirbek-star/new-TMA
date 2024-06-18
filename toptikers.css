@@ -13,7 +13,7 @@ body {
             position: fixed;
             width: 100%;
             left: 0px;
-            bottom: 10px;
+            bottom: 0px;
             border-top: 1px solid #5A8A9F;
             grid-template-columns: 1fr 1fr 1fr;
             background-color: #1c5169;
