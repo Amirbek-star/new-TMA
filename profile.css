@@ -145,4 +145,10 @@ body {
         #ton-connect{
             width: 100%;
             border-radius: 20px;
+            
         }
+        #ton-connect button{
+            width: 100%;
+            border-radius: 20px;        
+        }
+            
