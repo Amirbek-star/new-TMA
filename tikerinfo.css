@@ -1,15 +1,12 @@
-
-        body {
+body {
             font-family: Arial, sans-serif;
             text-align: center;
-            
             margin: 0px;
-
             background-size: 100% 100%;
             background: linear-gradient(to bottom, #0D1F2D, #0F3D56) no-repeat;
-            background-size: cover;      
+            background-size: cover;
         }
-        .navbar-bottom{
+        .navbar-bottom {
             display: grid;
             position: fixed;
             width: 100%;
@@ -21,61 +18,60 @@
             background-color: #1c5169;
             padding-top: 10px;
         }
-        .navbar-bottom button{
+        .navbar-bottom button {
             background-color: rgb(0,0,0,0);
             border: 0px;
             cursor: pointer;
         }
-        .navbar-bottom img{
+        .navbar-bottom img {
             width: 40px;
         }
-        header{
+        header {
             width: 100%;
             text-align: left;
             display: grid;
-            grid-template-columns:  10% 80%;
+            grid-template-columns: 10% 80%;
             border-bottom: 2px solid #5a8a9f;
         }
-        .header-title{
+        .header-title {
             padding-left: 16px;
             padding-right: 16px;
             color: white;
         }
-        header img{
+        header img {
             position: relative;
             top: 15px;
             left: 16px;
         }
-        
-        .active-btn{
+        .active-btn {
             background-color: #0da2c6;
             padding: 5px;
             border-radius: 12px;
         }
-        .disable-btn{
+        .disable-btn {
             padding: 5px;
             border-radius: 12px;
         }
-        
-        main{
+        main {
             padding: 0px 16px;
             margin-top: 20px;
         }
-        .main-p{
+        .main-p {
             text-align: left;
             color: white;
-            
         }
-        
-        .main-input{
+        .main-input {
             background-color: rgb(0,0,0,0);
             border: 1px solid #5A8A9F;
             width: 100%;
             padding: 12px 20px;
             border-radius: 12px;
             color: #95A0A5;
-        } 
-        .main-btn{
+        }
+        .main-input.error {
+            border: 1px solid #D4503D;
+        }
+        .main-btn {
             background-color: #0DA2C6;
             width: 98%;
             padding: 10px;
@@ -84,10 +80,10 @@
             border: 0px;
             border-radius: 12px;
         }
-        .main-form p{
+        .main-form p {
             color: white;
         }
-        .main-form{
+        .main-form {
             position: fixed;
             bottom: 70px;
             left: 0%;
@@ -95,5 +91,29 @@
             background-color: #1c5169;
             border-top: 1px solid #5A8A9F;
             padding-top: 15px;
+        }
+        .error-message {
+            color: #D4503D;
+            text-align: left;
+            margin-top: 5px;
+            display: none;
+        }
+        #tickerInfo p{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            color: white;
+            text-align: left;
+        }
+        #tickerInfo h3, h4{
+            text-align: left;
+            color: white;
+        }
+        #tickerInfo hr{
+            color: #5A8A9F;
+            border: 0.7px solid #5A8A9F;
+        }
+        #tickerInfo div{
+            min-height: 900px;
         }
         
