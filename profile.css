@@ -125,7 +125,7 @@ body {
         .transactions-info_header{
             margin: 0px;
             display: grid;
-            grid-template-columns: 10% 90%;
+            grid-template-columns: 15% 85%;
             text-align: left;
         }
         .transactions-info_header img{
