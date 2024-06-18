@@ -7,8 +7,8 @@ body {
             height: 100vh;
             
             background-size: 100% 100%;
-            background-repeat: no-repeat; /* Отключить повторение фона */
-            background-image: url('https://i.postimg.cc/yxjXQCxx/Splash-screen.png');
+            background: linear-gradient(to bottom, #0D1F2D, #0F3D56) no-repeat;
+            background-size: cover;      
         }
         .navbar-bottom{
             display: grid;
